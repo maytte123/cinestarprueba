@@ -36,16 +36,12 @@
 		global $mysqli;
 		global $_SQL;
 
+		$data = array();
 		if ( $rs = mysqli_query( $mysqli, $_SQL ) ) {
-			if ( $rs ->num_rows == 1 )
-				$data = $rs->fetch_assoc();
-			else {
-				$data = array();
-				while ( $row = $rs->fetch_assoc() )
-					$data[] = $row;
-			}			
+			while ( $row = $rs->fetch_assoc() )
+			$data[] = $row;
 		}
-
+			 
 		echo json_encode( $data, JSON_UNESCAPED_UNICODE );	
 	}
 

@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+Options All -Indexes
+
+RewriteEngine On
+RewriteRule ^(\w+)$ sweb.php?id=$1
+
+#cines
+RewriteRule ^(\w+)/([0-9]+)$ sweb.php?id=$1&idd=$2
+RewriteRule ^(\w+)/([0-9]+)/(\w+)$ sweb.php?id=$1&idd=$2&idx=$3
+
+#peliculas
+RewriteRule ^(\w+)/(\w+)$ sweb.php?id=$1&idx=$2

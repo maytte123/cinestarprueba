@@ -1,7 +1,9 @@
 <?php
   include('db.php');
     //BaseDatos('localhost','root','','cinestar');
-    BaseDatos("mysql8001.site4now.net","a8d434_cinesta","cinestar1234","db_a8d434_cinesta");
+    BaseDatos('localhost','id19927723_root','!\yFIyndlqIp~Sp0','id19927723_cinestar');
+    //BaseDatos("mysql8001.site4now.net","a8d434_cinesta","cinestar1234","db_a8d434_cinesta");
+ 
 
   if ( isset( $_GET["id"] ) ) $id = $_GET["id"];
   if ( isset( $_GET["idd"] ) ) $idd = $_GET["idd"];
